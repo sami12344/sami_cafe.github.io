@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("./_config.scss");
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -17,6 +18,10 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
 }
 
 .btn {
@@ -53,6 +58,10 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
 }
 
 .btn {
@@ -153,6 +162,68 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+.home {
+  min-height: 100vh;
+  padding-top: 12rem;
+  background: url("/assets/img/home-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home .image-slider {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.home .image-slider img {
+  height: 10rem;
+  margin: 0 .5rem;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+
+.home .image-slider img:hover {
+  transform: translateY(-2rem);
+}
+
+.home .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .row .content {
+  flex: 1 1 42rem;
+}
+
+.home .row .content h3 {
+  font-size: 6.5rem;
+  color: #443;
+  text-transform: uppercase;
+}
+
+.home .row .image {
+  flex: 1 1 42rem;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.home .row .image img {
+  height: 35rem;
+  animation: float 4s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-7rem);
   }
 }
 /*# sourceMappingURL=main.css.map */
