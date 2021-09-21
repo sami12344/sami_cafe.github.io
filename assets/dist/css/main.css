@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-@import url("./_config.scss");
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -168,7 +167,7 @@ section {
 .home {
   min-height: 100vh;
   padding-top: 12rem;
-  background: url("../home-bg.jpg") no-repeat;
+  background: url("/assets/img/home-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
