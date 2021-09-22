@@ -2,7 +2,8 @@
 .home {
   min-height: 100vh;
   padding-top: 12rem;
-  background: url("/home-bg.jpg") no-repeat;
+  background-image: url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   .image-slider{
@@ -56,6 +57,3 @@
   }
 }
 
-.image-slider{
-  font-size: 2rem;
-}

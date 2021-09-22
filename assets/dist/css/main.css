@@ -167,7 +167,8 @@ section {
 .home {
   min-height: 100vh;
   padding-top: 12rem;
-  background: url("/home-bg.jpg") no-repeat;
+  background-image: url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -224,9 +225,5 @@ section {
   50% {
     transform: translateY(-7rem);
   }
-}
-
-.image-slider {
-  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
