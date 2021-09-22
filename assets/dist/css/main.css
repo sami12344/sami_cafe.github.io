@@ -167,7 +167,7 @@ section {
 .home {
   min-height: 100vh;
   padding-top: 12rem;
-  background-image: url(../img/home-bg.jpg);
+  background-image: url("../img/home-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
