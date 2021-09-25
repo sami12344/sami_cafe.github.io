@@ -10,7 +10,7 @@
     text-align: center;
     padding:  3rem 0;
     img{
-      height: 10rem;
+      height: 9rem;
       margin: 0 .5rem;
       cursor: pointer;
       margin-top: 5rem;
@@ -22,8 +22,6 @@
   .row {
     display: flex;
     align-items: center;
-  
-  
     flex-wrap: wrap;
     gap: 1.5rem;
     .content {
@@ -57,3 +55,31 @@
   }
 }
 
+
+
+@media(max-width:768px){
+  .home{
+    text-align: center;
+    .row{
+      .content{
+        h3{
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media(max-width:450px){
+  .home{
+    .row{
+      .image{
+        img{
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
