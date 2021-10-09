@@ -16,5 +16,34 @@ document.querySelectorAll('.image-slider img').forEach(images => {
     images.onclick = () =>{
         let src = images.getAttribute('src');
         document.querySelector('.main-home-image').src = src;
-    }
+    };
 }); 
+
+
+//==================>>>>>> swiper JS <<<<<<======================================//
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 0,
+         
+        },
+        768: {
+            slidesPerView: 2,
+            
+        },
+       
+    },
+    loop:true,
+    grabCursor: true,
+});
+// ===========================<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>==========================================

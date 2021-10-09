@@ -1,0 +1,66 @@
+.menu {
+  background-image: url("../assets/image/menu-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    .box {
+    flex:1 1 42rem;
+    padding:2rem;
+    border:$border;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    margin-left: 6rem;
+      &:hover {
+        border: $border-hover;
+        border-radius: $border-radius-hover;
+      }
+      img {
+        height: 8rem;
+        margin-left: -6rem;
+      }
+      .content {
+        h3 {
+          font-size: 2.2rem;
+          color: $main-color;
+          line-height: 1.8;
+        }
+        p {
+          font-size: 1.6rem;
+          color: $main-color;
+          line-height: 1.8;
+          padding: 1rem 0;
+        }
+        span {
+          font-size: 2rem;
+          color: $main-color;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    .box-container {
+       
+      .box {
+        margin-left: 0;
+        margin-top: 6rem;
+        flex-flow: column;
+        text-align: center;
+        img {
+          margin-left: 0;
+
+          margin-top: -6rem;
+        }
+      }
+    }
+  }
+}

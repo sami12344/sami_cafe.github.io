@@ -8,6 +8,10 @@ $border: .2rem solid $main-color;
 $border-hover: .2rem dashed $main-color;
 $box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 
+@mixin border {
+  border-radius: $border-radius;
+  border: .2rem solid $main-color;
+}
 
 
 *{

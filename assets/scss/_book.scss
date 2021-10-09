@@ -1,0 +1,31 @@
+.book {
+  background: url("../assets/image/book-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  form{
+      margin: 0 auto 2rem auto;
+      max-width: 60rem;
+      border-radius: $border-radius-hover;
+      padding: 3rem;
+      border: $border;
+      .box{
+          width: 100%;
+          padding: 1rem 1.2rem;
+          border-radius: .5rem;
+          font-size: 1.6rem;
+          background: none;
+          text-transform: none;
+          color: $main-color;
+          border: $border;
+          margin: .7rem 0;
+          &:focus{
+              border: $border-hover;
+          }
+          
+      }
+      textarea{
+              height: 15rem;
+              resize: none;
+          }
+  }
+}
