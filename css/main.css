@@ -606,6 +606,7 @@ section {
 }
 
 .loader-container.fade-out {
+  display: none;
   opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */
