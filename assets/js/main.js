@@ -47,3 +47,15 @@ var swiper = new Swiper(".review-slider", {
     grabCursor: true,
 });
 // ===========================<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>==========================================
+
+// loader
+
+function loader() {
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut() {
+    setInterval(loader, 2000);
+}
+
+window.addEventListener('DOMContentLoaded', fadeOut)
