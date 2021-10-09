@@ -58,4 +58,4 @@ function fadeOut() {
     setInterval(loader, 2000);
 }
 
-window.addEventListener('DOMContentLoaded', fadeOut)
+window.addEventListener('load', fadeOut)
